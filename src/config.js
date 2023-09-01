@@ -22,7 +22,7 @@ module.exports = {
 
   // If set to a non-zero number, sends will be buffered to this many per second
   // This can significantly improve performance
-  bufferSends: 20,
+  bufferSends: 60,
 
   enableRename: false,
 
