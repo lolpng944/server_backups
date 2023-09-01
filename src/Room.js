@@ -41,7 +41,7 @@ class Room {
     /**
      * Maximum number of variables that can be within this room.
      */
-    this.maxVariables = 25;
+    this.maxVariables = 40;
     /**
      * Maximum number of clients that can be connected to this room.
      */
