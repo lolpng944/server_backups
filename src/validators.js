@@ -6,7 +6,7 @@ const CLOUD_PREFIXES = ['☁ ', ':cloud: '];
 const VARIABLE_NAME_MAX_LENGTH = 1024;
 
 /** The maximum length of a variable's value. */
-const VALUE_MAX_LENGTH = 10000;
+const VALUE_MAX_LENGTH = 80000;
 
 /** Maximum length of usernames, inclusive. */
 const USERNAME_MAX_LENGTH = 20;
@@ -82,7 +82,7 @@ module.exports.isValidVariableValue = function(value) {
         // 48 = 0
         // 57 = 9
         // all the numbers are between these
-        if (char < 48 || char > 57) return false;
+        if (char < 48 || char > 57) return true;
       }
     }
 
@@ -91,3 +91,4 @@ module.exports.isValidVariableValue = function(value) {
 
   return false;
 };
+
